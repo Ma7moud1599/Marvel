@@ -1,0 +1,22 @@
+{
+  "name": "tailwind-tutorials",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss ./src/main.css -o ./dist/master.css",
+    "watch": "tailwindcss ./src/main.css -o ./dist/master.css --w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.15"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "postcss-cli": "^9.1.0"
+  }
+}

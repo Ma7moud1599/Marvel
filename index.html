@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind tutorials</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500&family=Marvel:wght@400;700&family=Maven+Pro:wght@400;500;600;700;800;900&family=Tajawal:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./dist/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./dist/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./dist/master.css">
+    <link rel="stylesheet" href="./src/main.css">
+    <style>
+        #menu-toggle:checked+#menu {
+            display: block;
+        }
+    </style>
+    <!-- <link rel="FaviconIcon" href="favicon.ico" type="image/x-icon"> -->
+</head>
+
+<body>
+    <!-- start header section -->
+    <header class="font-maven max-w-full nav">
+        <div class="container mx-auto header" id="navbar">
+            <div class="lg:pl-10">
+                <a href="index.html" class="text-2xl py-2">
+                    <i class="fas fa-gem text-3xl mx-2"></i>
+                    <span class="font-bold">Marvel</span>
+                </a>
+            </div>
+            <label for="menu-toggle" class="block md:hidden cursor-pointer self-center mr-2">
+                <svg class="fill-current text-gray-900" xmlns="htttp://www.w3.org/2000/svg" width="20" height="20"
+                    viewBox="0 0 20 20">
+                    <title>menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </label>
+            <input class="hidden" type="checkbox" id="menu-toggle">
+            <div class="hidden w-full text-center md:flex md:flex-grow md:w-auto" id="menu">
+                <ul class="pt-5 md:pt-0 md:flex md:flex-grow md:justify-center">
+                    <li class="py-2 mx-4"><a href="#" class="capitalize text-textColor-0 font-bold">About</a></li>
+                    <li class="py-2 mx-4"><a href="#" class="capitalize text-textColor-0 font-bold">Projects</a></li>
+                    <li class="py-2 mx-4"><a href="#" class="capitalize text-textColor-0 font-bold">Resume</a></li>
+                    <li class="py-2 mx-4"><a href="#" class="capitalize text-textColor-0 font-bold">Contact</a></li>
+                </ul>
+                <div class="mt-2 lg:pr-10 color-mode">
+                    <i class="far fa-moon font-bold" aria-hidden="true"></i>
+                    <span class="font-bold">Color Mode</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header section -->
+    <!-- start portfolio -->
+    <div class="container mx-auto port font-maven">
+        <div class="portfolio flex flex-wrap justify-center">
+            <div class="info px-5 md:w-3/5 sm:w-full">
+                <span class="sp text-textColor-0">Welcome To My Portfolio Website</span>
+                <h1 class="font-semibold text-4xl sm:my-7 hero">Hay folks, I'm <span
+                        class="element text-hoverColor-0"></span>
+                </h1>
+                <p class="mb-4 tracking-wide text-textColor-0 text-lg">Building a successful product is a challenge. I
+                    am highly
+                    energetic in
+                    user
+                    experience design,
+                    interfaces and web development.</p>
+                <div class="buttons w-full pt-7">
+                    <button
+                        class="md:w-2/6 md:mx-2 md:py-3 w-full bg-red-100 my-5 py-4 text-gray-700 font-bold rounded-full">
+                        <i class="far fa-file-alt mx-1"></i>
+                        Download Resume
+                    </button>
+                    <button
+                        class="md:w-2/6 md:mx-2 md:py-3 w-full bg-gray-700 py-4 text-red-50 font-bold rounded-full">Get
+                        a
+                        Free
+                        Quote</button>
+                </div>
+            </div>
+            <div class="img text-center md:w-2/5 md:mt-5 sm:w-full sm:mt-16 px-10">
+                <img src=" ./img/undraw_software_engineer_lvl5.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- and portfolio -->
+    <!-- start project section -->
+    <div class="container mx-auto text-center mt-40 mb-10 font-maven pb-10">
+        <div>
+            <h1 class="font-bold text-4xl slider-header">Things I have designed for digital media agencies</h1>
+        </div>
+        <div class="owl-carousel owl-theme owl-loaded owl-drag text-center">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item">
+                        <img src="./img/project-image01.png" alt="">
+                    </div>
+                    <div class="owl-item">
+                        <img src="./img/project-image02.png" alt="">
+                    </div>
+                    <div class="owl-item">
+                        <img src="./img/project-image03.png" alt="">
+                    </div>
+                    <div class="owl-item">
+                        <img src="./img/project-image04.png" alt="">
+                    </div>
+                    <div class="owl-item">
+                        <img src="./img/project-image05.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end project section -->
+    <!-- Start Resume section -->
+    <div class="container mx-auto font-maven px-8 pb-10 mb-10">
+        <div class="information flex flex-wrap">
+            <div class="exper md:w-1/2 sm:w-full sm:mt-10">
+                <h1 class="font-bold text-3xl text-headingColor-0 ml-7 mb-10 slider-header">Experiences</h1>
+                <div class="timeline relative pb-5">
+                    <div class="cercil rounded-full bg-gray-700 relative mx-6 float-left">
+                        <span>2019</span>
+                    </div>
+                    <div class="ml-4">
+                        <h2 class="mb-2 w-auto">
+                            <span class="font-bold text-2xl text-headingColor-0 ml-1 slider-header">Project
+                                Manager</span>
+                            <span class="ml-3 font-bold text-textColor-0">Best Studio</span>
+                        </h2>
+                        <p class="text-textColor-0 ml-24">Proin ornare non purus ut rutrum. Nulla facilisi.
+                            Aliquam laoreet
+                            libero ac pharetra feugiat.
+                            Cras ac fermentum nunc, a faucibus nunc.</p>
+                    </div>
+                </div>
+                <div class="timeline relative pb-5">
+                    <div class="cercil rounded-full bg-gray-700 relative mx-6 float-left">
+                        <span>2019</span>
+                    </div>
+                    <div class="ml-4">
+                        <h2 class="mb-2 w-auto">
+                            <span class="font-bold text-2xl text-headingColor-0 ml-1 slider-header">UX Designer</span>
+                            <span class="ml-3 font-bold text-textColor-0">Digital Ace</span>
+                        </h2>
+                        <p class="text-textColor-0 ml-24">Proin ornare non purus ut rutrum. Nulla facilisi.
+                            Aliquam laoreet
+                            libero ac pharetra feugiat.
+                            Cras ac fermentum nunc, a faucibus nunc.</p>
+                    </div>
+                </div>
+                <div class="timeline relative pb-5">
+                    <div class="cercil rounded-full bg-gray-700 relative mx-6 float-left">
+                        <span>2019</span>
+                    </div>
+                    <div class="ml-4">
+                        <h2 class="mb-2 w-auto">
+                            <span class="font-bold text-2xl text-headingColor-0 ml-1 slider-header">UI Freelancer</span>
+                        </h2>
+                        <p class="text-textColor-0 ml-24">Proin ornare non purus ut rutrum. Nulla facilisi.
+                            Aliquam laoreet
+                            libero ac pharetra feugiat.
+                            Cras ac fermentum nunc, a faucibus nunc.</p>
+                    </div>
+                </div>
+                <div class="timelin relative pb-5">
+                    <div class="cercil rounded-full bg-gray-700 relative mx-6 float-left">
+                        <span>2019</span>
+                    </div>
+                    <div class="ml-4">
+                        <h2 class="mb-2 w-auto">
+                            <span class="font-bold text-2xl text-headingColor-0 ml-1 slider-header">Junior
+                                Designer</span>
+                            <span class="ml-3 font-bold text-textColor-0">Crafted Co.</span>
+                        </h2>
+                        <p class="text-textColor-0 ml-24">Proin ornare non purus ut rutrum. Nulla facilisi.
+                            Aliquam laoreet
+                            libero ac pharetra feugiat.
+                            Cras ac fermentum nunc, a faucibus nunc.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="educt md:w-1/2 sm:w-full sm:mt-10">
+                <h1 class="font-bold text-3xl text-headingColor-0 mb-10 ml-7 slider-header">Educations</h1>
+                <div class="timeline relative pb-5">
+                    <div class="cercil rounded-full bg-gray-700 relative mx-6 float-left">
+                        <span>2019</span>
+                    </div>
+                    <div class="ml-4">
+                        <h2 class="mb-2 w-auto">
+                            <span class="font-bold text-2xl text-headingColor-0 ml-1 slider-header">Mobile Web</span>
+                            <span class="ml-3 font-bold text-textColor-0">Master Design</span>
+                        </h2>
+                        <p class="text-textColor-0 ml-24">Proin ornare non purus ut rutrum. Nulla facilisi.
+                            Aliquam laoreet
+                            libero ac pharetra feugiat.
+                            Cras ac fermentum nunc, a faucibus nunc.</p>
+                    </div>
+                </div>
+                <div class="timeline relative pb-5">
+                    <div class="cercil rounded-full bg-gray-700 relative mx-6 float-left">
+                        <span>2019</span>
+                    </div>
+                    <div class="ml-4">
+                        <h2 class="mb-2 w-auto">
+                            <span class="font-bold text-2xl text-headingColor-0 ml-1 slider-header">User
+                                Interfaces</span>
+                            <span class="ml-3 font-bold text-textColor-0">Creative Agency</span>
+                        </h2>
+                        <p class="text-textColor-0 ml-24">Proin ornare non purus ut rutrum. Nulla facilisi.
+                            Aliquam laoreet
+                            libero ac pharetra feugiat.
+                            Cras ac fermentum nunc, a faucibus nunc.</p>
+                    </div>
+                </div>
+                <div class="timelin relative pb-5">
+                    <div class="cercil rounded-full bg-gray-700 relative mx-6 float-left">
+                        <span>2019</span>
+                    </div>
+                    <div class="ml-4">
+                        <h2 class="mb-2 w-auto">
+                            <span class="font-bold text-2xl text-headingColor-0 ml-1 slider-header">Artwork
+                                Design</span>
+                            <span class="ml-3 font-bold text-textColor-0">New Art School</span>
+                        </h2>
+                        <p class="text-textColor-0 ml-24">Proin ornare non purus ut rutrum. Nulla facilisi.
+                            Aliquam laoreet
+                            libero ac pharetra feugiat.
+                            Cras ac fermentum nunc, a faucibus nunc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Resume section -->
+
+    <!-- start contact section -->
+    <div class="container mx-auto font-maven px-14 mb-20">
+        <div class="md:flex sm:block">
+            <div class="md:w-1/2 md:pr-10 sm:w-full sm:pr-0">
+                <div class="google-map w-100">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12088.558402180099!2d-73.99373482142036!3d40.75895421922642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855b8fb3083%3A0xa0f9aef176042a5c!2sTheater+District%2C+New+York%2C+NY%2C+USA!5e0!3m2!1sen!2smm!4v1549875377188"
+                        width="100%" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div class="contact-info bg-gray-700 w-full pl-10 h-40 py-7 flex justify-between">
+                    <div class="contact-info-item">
+                        <h3 class="mb-3 text-white font-bold text-3xl">Say hello</h3>
+                        <p class="footer-text mb-0 text-footerColor-0">010 020 0960</p>
+                        <p><a href="mailto:hello@company.co" class="text-footerColor-0 pb-10">hello@company.co</a></p>
+                    </div>
+
+                    <ul class="social-links pr-10">
+                        <li><i class="fab fa-dribbble text-white pb-5"></i></li>
+                        <li><i class="fab fa-instagram text-white pb-5"></i></li>
+                        <li><i class="fab fa-youtube text-white"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="md:w-1/2 sm:w-full">
+                <h1 class="font-bold text-headingColor-0 w-full xl:text-4xl md:text-3xl sm:text-5xl slider-header">
+                    Interested to work
+                    together?
+                    Let's
+                    talk
+                </h1>
+                <form>
+                    <input type="text" placeholder="Your Name"
+                        class="border-solid border-gray-300 border my-7 pl-5 mr-0.5 h-12 font-bold xl:w-72 md:w-full md:mb-0 sm:w-max">
+                    <input type="email" placeholder="Email"
+                        class="border-solid border-gray-300 border my-7 pl-5 h-12 font-bold  xl:w-72 md:w-full md:ml-0 sm:w-1/2 sm:ml-4">
+                    <textarea name="Message" cols="30" rows="6" placeholder="Message"
+                        class="border-solid border-gray-300 border w-full pl-5 font-bold lg:h-44"></textarea>
+                </form>
+                <div class="w-full md:text-right sm:text-center">
+                    <button
+                        class="send-btn w-52 bg-hoverColor-0 text-white font-bold rounded-full h-12 mt-5 lg:mt-10 mr-0">Send
+                        Button</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End contact section -->
+
+    <!-- start footer section -->
+
+    <div class="footer h-48 bg-gray-900"></div>
+    <!-- End footer section -->
+    <script src="./dist/js/jquery-3.6.0.js"></script>
+    <script src="./dist/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.js"></script>
+    <script src="	https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js"></script>
+    <script src="./dist/js/main.js"></script>
+</body>
+
+</html>
